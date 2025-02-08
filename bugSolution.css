@@ -1,0 +1,37 @@
+/* bugSolution.css */
+
+/* Correcting missing spaces */
+.correct-spacing {
+  width: calc(100% - 20px);
+  /*Space added around - operator*/
+}
+
+/* Correcting invalid units */
+.correct-units {
+  height: calc(100vh - 5rem);
+  /*Using valid units vh and rem*/
+}
+
+/* Correcting order of operations in nested expressions*/
+.correct-order {
+  margin: calc( (100px + 20px) / 2);
+  /*Using parenthesis to control order of operations*/
+}
+
+/*Example of a more complex calculation with correct syntax*/
+.complex-calc {
+  padding: calc( (100% - 50px) / 2 + 10px );
+}
+
+/* Avoid these common mistakes */
+.incorrect-spacing {
+  width:calc(100%-20px); /* Missing spaces */
+}
+
+.incorrect-units {
+  height: calc(100vh - 5em);/*Invalid Unit em*/
+}
+
+.incorrect-order {
+  margin: calc(100px + 20px / 2); /* Incorrect order without parenthesis*/
+}
